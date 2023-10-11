@@ -1,0 +1,28 @@
+npm init -y
+tsc --init
+open tsconfig.json write this code
+
+{
+  "compilerOptions": {
+    "target": "ES2022",   /* here enter latest version if next js not 
+support so enter old version like 2022  */
+    "module": "NodeNext",                                
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,           
+    "strict": true,                                     
+    "skipLibCheck": true
+  }
+}
+
+open package.json file and change it
+
+top of the script write this 
+
+  "type": "module",
+
+create app.ts and write some code 
+and compile the code  the if we want to compile the whole file
+so run tsc and if we want to compile one file so compile like this
+tsc ./filename.ts
+and if we want to run it forever so run this
+tsc ./filename.ts --watch
